@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Search",
+  "description": "Gives users a set of advanced options for searching webpages.",
+  "version": "1.0",
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+Shift+F"
+      }
+    }
+  },
+  "action": {
+    "default_popup": "popup/smart-search.html",
+    "default_title": "Smart Search\nCtrl + Shift + F to activate"
+  }
+}
